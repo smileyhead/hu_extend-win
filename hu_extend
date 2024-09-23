@@ -1,0 +1,151 @@
+default partial
+xkb_symbols "basic" {
+
+// Equal to standard Hungarian "qwertz" layout 
+	include "level3(ralt_switch)"
+// "Alpha" section
+	key <TLDE>  { [	0,              section,            notsign,            notsign             ] }; // 0 § ¬ ¬  code 49
+	key <AE01>  { [	1,              apostrophe,         asciitilde,         dead_tilde          ] }; // 1 ' ~ ~  code 10
+	key <AE02>  { [	2,              quotedbl,           dead_caron,         caron               ] }; // 2 " ˇ ˇ  code 11
+	key <AE03>  { [	3,              plus,               asciicircum,        dead_circumflex     ] }; // 3 + ^ ^  code 12
+	key <AE04>  { [	4,              exclam,             dead_breve,         breve               ] }; // 4 ! ˘ ˘  code 13
+	key <AE05>  { [	5,              percent,            dead_abovering,     degree              ] }; // 5 % ° °  code 14
+	key <AE06>  { [	6,              slash,              dead_ogonek,        ogonek              ] }; // 6 / ˛ ˛  code 15
+	key <AE07>  { [	7,              equal,              grave,              dead_grave          ] }; // 7 = ` `  code 16
+	key <AE08>  { [	8,              parenleft,          dead_abovedot,      abovedot            ] }; // 8 ( ˙ ˙  code 17
+	key <AE09>  { [	9,              parenright,         dead_acute,         acute               ] }; // 9 ) ´ '  code 18
+	key <AE10>  { [	odiaeresis,     Odiaeresis,         dead_doubleacute,   doubleacute         ] }; // ö Ö ˝ ˝  code 19
+	key <AE11>  { [	udiaeresis,     Udiaeresis,         dead_diaeresis,     diaeresis           ] }; // ü Ü ¨ "  code 20
+	key <AE12>  { [	oacute,         Oacute,             dead_cedilla,       cedilla             ] }; // ó Ó ¸ ¸  code 21
+
+	key <BKSL>  { [	udoubleacute,   Udoubleacute,       currency,           breve               ] }; // ű Ű ¤ ˘  code 51
+
+	key <AD01>  { [	q,              Q,                  backslash,          Greek_OMEGA         ] }; // q Q \ Ω  code 24
+	key <AD02>  { [	w,              W,                  bar,                Lstroke             ] }; // w W | Ł  code 25
+	key <AD03>  { [	e,              E,                  e,                  E                   ] }; // e E e E  code 26
+	key <AD04>  { [	r,              R,                  paragraph,          registered          ] }; // r R ¶ ®  code 27
+	key <AD05>  { [	t,              T,                  tslash,             Tslash              ] }; // t T ŧ Ŧ  code 28
+	key <AD06>  { [	z,              Z,                  leftarrow,          yen                 ] }; // z Z ← ¥  code 29
+	key <AD07>  { [	u,              U,                  EuroSign,           uparrow             ] }; // u U € ↑  code 30
+	key <AD08>  { [	i,              I,                  Iacute,             iacute              ] }; // i I Í í  code 31
+	key <AD09>  { [	o,              O,                  oslash,             Ooblique            ] }; // o O ø Ø  code 32
+	key <AD10>  { [	p,              P,                  thorn,              THORN               ] }; // p P þ Þ  code 33
+	key <AD11>  { [	odoubleacute,   Odoubleacute,       division,           dead_abovering      ] }; // ő Ő ÷ °  code 34
+	key <AD12>  { [	uacute,         Uacute,             multiply,           dead_macron         ] }; // ú Ú × ¯  code 35
+
+	key <AC01>  { [	a,              A,                  adiaeresis,         Adiaeresis          ] }; // a A ä Ä  code 38
+	key <AC02>  { [	s,              S,                  dstroke,            section             ] }; // s S đ §  code 39
+	key <AC03>  { [	d,              D,                  Dstroke,            ETH                 ] }; // d D Đ Ð  code 40
+	key <AC04>  { [	f,              F,                  bracketleft,        ordfeminine         ] }; // f F [ ª  code 41
+	key <AC05>  { [	g,              G,                  bracketright,       ENG                 ] }; // g G ] Ŋ  code 42
+	key <AC06>  { [	h,              H,                  hstroke,            Hstroke             ] }; // h H ħ Ħ  code 43
+	key <AC07>  { [	j,              J,                  iacute,             Iacute              ] }; // j J í Í  code 44
+	key <AC08>  { [	k,              K,                  lstroke,            ampersand           ] }; // k K ł &  code 45
+	key <AC09>  { [	l,              L,                  Lstroke,            Lstroke             ] }; // l L Ł Ł  code 46
+	key <AC10>  { [	eacute,         Eacute,             dollar,             cent                ] }; // é É $ ¢  code 47
+	key <AC11>  { [	aacute,         Aacute,             ssharp,             dead_caron          ] }; // á Á ß ˇ  code 48
+
+	key <LSGT>  { [	iacute,         Iacute,             less,               greater             ] }; // í Í < >  code 94
+
+	key <AB01>  { [	y,              Y,                  greater,            less                ] }; // y Y > <  code 52
+	key <AB02>  { [	x,              X,                  numbersign,         greater             ] }; // x X # >  code 53
+	key <AB03>  { [	c,              C,                  ampersand,          copyright           ] }; // c C & ©  code 54
+	key <AB04>  { [	v,              V,                  at,                 leftsinglequotemark ] }; // v V @ ‘  code 55
+	key <AB05>  { [	b,              B,                  braceleft,          rightsinglequotemark] }; // b B { ’  code 56
+	key <AB06>  { [	n,              N,                  braceright,         N                   ] }; // n N } N  code 57
+	key <AB07>  { [	m,              M,                  less,               masculine           ] }; // m M < º  code 58
+	key <AB08>  { [	comma,          question,           semicolon,          multiply            ] }; // , ? ; ×  code 59
+	key <AB09>  { [	period,         colon,              greater,            division            ] }; // . : > ÷  code 60
+	key <AB10>  { [	minus,          underscore,         asterisk,           dead_abovedot       ] }; // - _ * ˙  code 61
+
+// "Keypad" section
+	key <KPDL>  { [ KP_Delete,      comma,              comma                                   ] }; // , del  , code 91
+};
+	
+partial
+xkb_symbols "reorganized" {
+
+// The standard Hungarian "qwertz" layout modified
+
+    include "hu_extend"
+	
+// "Alpha" section
+
+// "AExx" (second) row
+// Dead keys on third column, except "dead_tilde"
+// Added some matematical symbols on fourth column
+// Spanish reverse exclam
+	key <TLDE>  { [	0,              section,            dead_macron,        notsign             ] }; // 0 § ¯ ¬  code 49
+	key <AE01>  { [	1,              apostrophe,         asciitilde,         dead_tilde          ] }; // 1 ' ~ ~  code 10
+	key <AE02>  { [	2,              quotedbl,           dead_caron,         U222A               ] }; // 2 " ˇ ∪  code 11
+	key <AE03>  { [	3,              plus,               dead_circumflex,    U2229               ] }; // 3 + ^ ∩  code 12
+	key <AE04>  { [	4,              exclam,             dead_breve,         exclamdown          ] }; // 4 ! ˘ ¡  code 13
+	key <AE05>  { [	5,              percent,            dead_abovering,     U2030               ] }; // 5 % ° ‰  code 14
+	key <AE06>  { [	6,              slash,              dead_ogonek,        U2261               ] }; // 6 / ˛ ≡  code 15
+	key <AE07>  { [	7,              equal,              dead_grave,         U2260               ] }; // 7 = ` ≠  code 16
+	key <AE08>  { [	8,              parenleft,          dead_abovedot,      U22DC               ] }; // 8 ( ˙ ⋜  code 17
+	key <AE09>  { [	9,              parenright,         dead_acute,         U22DD               ] }; // 9 ) ´ ⋝  code 18
+	key <AE10>  { [	odiaeresis,     Odiaeresis,         dead_doubleacute,   U2033               ] }; // ö Ö ˝ ″  code 19
+	key <AE11>  { [	udiaeresis,     Udiaeresis,         dead_diaeresis,     U2032               ] }; // ü Ü ¨ ′  code 20
+	key <AE12>  { [	oacute,         Oacute,             dead_cedilla,       U203E               ] }; // ó Ó ¸ ‾  code 21
+
+// Added some symbols where not written on keyboard
+// Removed the repeated symbols
+// Some symbols of the Hungarian spelling and of the general text is important
+// Spanish reverse question
+	key <AD02>  { [	w,              W,                  bar,                U03C9               ] }; // w W | ω  code 25
+	key <AD03>  { [	e,              E,                  guillemotright,     U03B5               ] }; // e E » ε  code 26
+	key <AD05>  { [	t,              T,                  U2122,              U2121               ] }; // t T ™ ℡  code 28
+	key <AD06>  { [	z,              Z,                  yen,                U2048               ] }; // z Z ¥ ⁈  code 29
+	key <AD07>  { [	u,              U,                  EuroSign,           U2049               ] }; // u U € ⁉  code 30
+	key <AD08>  { [	i,              I,                  guillemotleft,      plusminus           ] }; // i I « ±  code 31
+	key <AD10>  { [	p,              P,                  U2103,              U2109               ] }; // p P ℃ ℉  code 33
+	key <AD11>  { [	odoubleacute,   Odoubleacute,       division,           degree              ] }; // ő Ő ÷ °  code 34
+	key <AD12>  { [	uacute,         Uacute,             multiply,           U23DA               ] }; // ú Ú × ⏚  code 35
+	
+	key <AC02>  { [	s,              S,                  dstroke,            U2211               ] }; // s S đ ∑  code 39
+	key <AC03>  { [	d,              D,                  Dstroke,            U2300               ] }; // d D Đ ⌀  code 40
+	key <AC04>  { [	f,              F,                  bracketleft,        U2640               ] }; // f F [ ♀  code 41
+	key <AC05>  { [	g,              G,                  bracketright,       sterling            ] }; // g G ] £  code 42
+	key <AC06>  { [	h,              H,                  U201E,              U201C               ] }; // h H „ “  code 43
+	key <AC07>  { [	j,              J,                  U201D,              U201D               ] }; // j J ” ”  code 44
+	key <AC08>  { [	k,              K,                  lstroke,            U03F0               ] }; // k K ł ϰ  code 45
+	key <AC09>  { [	l,              L,                  Lstroke,            U20A4               ] }; // l L Ł ₤  code 46
+	key <AC11>  { [	aacute,         Aacute,             U00DF,              U1E9E               ] }; // á Á ß ẞ  code 48
+
+	key <LSGT>  { [	iacute,         Iacute,             less,               squareroot          ] }; // í Í < √  code 94
+
+	key <AB01>  { [	y,              Y,                  greater,            U221E               ] }; // y Y > ∞  code 52
+	key <AB02>  { [	x,              X,                  numbersign,         U03C0               ] }; // x X # π  code 53
+	key <AB06>  { [	n,              N,                  braceright,         mu                  ] }; // n N } µ  code 57
+	key <AB07>  { [	m,              M,                  endash,             U2642               ] }; // m M – ♂  code 58
+	key <AB08>  { [	comma,          question,           semicolon,          questiondown        ] }; // , ? ; ¿  code 59
+	key <AB09>  { [	period,         colon,              ellipsis,           division            ] }; // . : … ÷  code 60
+	key <AB10>  { [	minus,          underscore,         asterisk,           U0304               ] }; // - _ * ̄   code 61
+
+// "Keypad" section
+// Added arrows on third and fourth column
+// Decimal sign on Delete key (third and fourth column)
+	key <KP7>   { [	KP_Home,        KP_7,               U21D6,              U2196               ] }; // 7 home   ↖ ⇖  code 79
+	key <KP8>   { [	KP_Up,          KP_8,               U21D1,              U2191               ] }; // 8 up     ↑ ⇑  code 80
+	key <KP9>   { [	KP_Prior,       KP_9,               U21D7,              U2197               ] }; // 9 prior  ↗ ⇗  code 81
+ 
+	key <KP4>   { [	KP_Left,        KP_4,               U21D0,              U2190               ] }; // 4 left   ← ⇐  code 83
+	key <KP5>   { [	KP_Begin,       KP_5,               U21D4,              U2194               ] }; // 5 begin  ↔ ⇔  code 84
+	key <KP6>   { [	KP_Right,       KP_6,               U21D2,              U2192               ] }; // 6 right  → ⇒  code 85
+
+	key <KP1>   { [	KP_End,         KP_1,               U21D9,              U2199               ] }; // 1 end    ↙ ⇙  code 87
+	key <KP2>   { [	KP_Down,        KP_2,               U21D3,              U2193               ] }; // 2 down   ↓ ⇓  code 88
+	key <KP3>   { [	KP_Next,        KP_3,               U21D8,              U2198               ] }; // 3 next   ↘ ⇘  code 89
+
+	key <KP0>   { [	KP_Insert,      KP_0,               U21D5,              U2195               ] }; // 0 insert ↕ ⇕  code 90
+	key <KPDL>  { [	KP_Delete,      comma,              KP_Decimal,         KP_Decimal          ] }; // , del    . .  code 91
+
+// Added some symbols on second, third and fourth column
+key.type[Group1]="FOUR_LEVEL_MIXED_KEYPAD" ;
+	key <KPDV>  { [	U22A2,          KP_Divide,          U2225,              U2226               ] }; // / ⊢ ∥ ∦  code 106
+	key <KPMU>  { [	U22A3,          KP_Multiply,        U2672,              U267B               ] }; // * ⊣ ♲ ♻  code 63
+	key <KPSU>  { [	U22A4,          KP_Subtract,        U2213,              U262E               ] }; // - ⊤ ∓ ☮  code 82
+	key <KPAD>  { [	U22A5,          KP_Add,             U27C2,              U22B9               ] }; // + ⊥ ⟂ ⊹  code 86
+};
+	
