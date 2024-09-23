@@ -16,3 +16,8 @@ A cikk szerzője felötlött egy olyan billentyűzetkiosztást, ami ezeket a pro
 A kiosztást [ezen a hivatkozáson](https://github.com/smileyhead/hu_extend-win/releases/latest/download/hu_ext.zip) töltheti le.
 
 A telepítéshez csomagolja ki a tömörített mappát és futtassa a „setup.exe” fájlt! A billentyűzetkiosztás ezután azonnal telepítve lesz. Az aktív billentyűzetkiosztás kiválasztásához a nyelvi eszköztárat használhatja, ami a képernyő jobb alsó sarkában, általában HUN-jelzéssel jelenik meg. Ha szeretné, eltávolíthatja az alapértelmezett magyar billentyűzetkiosztást a Windows nyelvi beállításai alatt.
+
+## Linux
+Ha kívánja a szerkesztett kiosztásomat Linuxon használni, kövesse az eredeti útmutatót az [intermatrix.hu-n](https://intermatrix.hu/hu-keyboard) ([archivált változat](https://web.archive.org/web/20220119112820/https://intermatrix.hu/hu-keyboard)), de amikor ahhoz a részhez jut, ahol a `hu_extend` fájlt kell létrehoznia, az ott leírtaktól eltérően töltse fel [ezzel a tartalommal](/hu_extend)!
+> [!NOTE]
+> A linuxos [hu_extend](/hu_extend) fájl csak az idézőjeles módosításokban különbözik az eredeti cikkben lévőtől, ezért az MKLC-s/számbillentyűs korlátozások rá nem vonatkoznak.
